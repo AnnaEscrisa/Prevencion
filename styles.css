@@ -1,0 +1,117 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    margin-left: 50px;
+    height: 15%;
+    position: fixed;
+    display: flex;
+}
+
+header #palo {
+    height: 100%;
+    width: 10px;
+    background-color: blue;
+}
+
+header ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* !ALERTA le cambiamos el color y tambien on hovered */
+header a {
+    text-decoration: none;
+    color:  #ff453c;;
+    font-weight: bold;
+}
+
+section {
+    height: 100%;
+}
+
+section>h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#empresa {
+    background-color: #dfe8fc;
+    border-radius: 0% 0% 300px 0%;
+}
+
+article {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.intro img {
+    height: 60%;
+}
+
+.card {
+    height: 60%;
+    width: 40%;
+    transition: width 1s, height 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card img {
+    height: 300px;
+    width: 300px;
+}
+
+.card:hover {
+    transition: 1s;
+    width: 100%;
+    height: 90%;
+    border-radius: 0 100px 0 100px;
+}
+
+.card:first-child:hover {
+    background-color: #fc615a;
+}
+
+.card:last-child:hover {
+    background-color: #686ff9;
+}
+
+.card:hover .hidden {
+    height: auto;
+    opacity: 1;
+}
+
+.hidden {
+    height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#prevention {
+    background-color: brown;
+    border-radius: 300px 0 0 0;
+}
+
+.carousel img {
+    height: 20%;
+}
