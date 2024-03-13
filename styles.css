@@ -109,6 +109,10 @@ article {
     background-color: #fc615a;
 }
 
+.card:nth-child(2):hover {
+    background-color: #b1b5ff;
+}
+
 .card:last-child:hover {
     background-color: #686ff9;
 }
