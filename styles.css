@@ -37,9 +37,13 @@ header ul {
 /* !ALERTA le cambiamos el color y tambien on hovered */
 header a {
     text-decoration: none;
-    color:  #ff453c;
+    color: #ff453c;
     font-weight: bold;
     text-shadow: rgb(106, 106, 106) 1px 1px 5px;
+}
+
+header a:hover {
+    color: #3c7aff;
 }
 
 section {
@@ -142,5 +146,27 @@ article {
 }
 
 .carousel img:hover {
-    transform: scale(250%);   
+    transform: scale(250%);
+}
+
+#emergency img, div {
+    
+    width: 40%;
+}
+
+#oblig {
+    background-color: #dfe8fc;;
+}
+
+#oblig .card {
+    background-color: transparent;
+}
+
+#oblig .card:first-child:hover {
+
+    background-color: #686ff9;
+}
+
+#oblig .card:last-child:hover {
+    background-color: #fc615a;
 }
