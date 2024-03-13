@@ -17,6 +17,7 @@ header {
     height: 15%;
     position: fixed;
     display: flex;
+    z-index: 3;
 }
 
 header #palo {
@@ -36,8 +37,9 @@ header ul {
 /* !ALERTA le cambiamos el color y tambien on hovered */
 header a {
     text-decoration: none;
-    color:  #ff453c;;
+    color:  #ff453c;
     font-weight: bold;
+    text-shadow: rgb(106, 106, 106) 1px 1px 5px;
 }
 
 section {
@@ -64,6 +66,11 @@ article {
 
 .intro img {
     height: 60%;
+    width: 40%;
+}
+
+.intro div {
+    width: 40%;
 }
 
 .card {
@@ -108,10 +115,32 @@ article {
 }
 
 #prevention {
-    background-color: brown;
+    background-color: #fa7770;
     border-radius: 300px 0 0 0;
+    text-align: center;
+}
+
+#prevention div {
+    height: 100%;
+}
+
+.medidas {
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    gap: 0;
+    align-items: baseline;
+}
+
+#prevention .medidas div {
+    width: 30%;
+    height: 25%;
 }
 
 .carousel img {
-    height: 20%;
+    height: 90%;
+    transition: 1s;
+}
+
+.carousel img:hover {
+    transform: scale(250%);   
 }
