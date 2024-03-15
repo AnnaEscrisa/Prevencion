@@ -10,6 +10,7 @@ html {
 
 body {
     height: 100vh;
+    max-width: 100%;
 }
 
 header {
@@ -37,13 +38,14 @@ header ul {
 /* !ALERTA le cambiamos el color y tambien on hovered */
 header a {
     text-decoration: none;
-    color: #ff453c;
+   
+    color: #3c7aff;
     font-weight: bold;
     text-shadow: rgb(106, 106, 106) 1px 1px 5px;
 }
 
 header a:hover {
-    color: #3c7aff;
+    color: #ff453c;
 }
 
 section {
@@ -69,12 +71,27 @@ article {
 }
 
 .intro img {
-    height: 60%;
+    height: 70%;
     width: 40%;
 }
 
 .intro div {
     width: 40%;
+    text-align: justify;
+}
+
+.intro h1 {
+    color: #ff453c;
+}
+
+.intro h5 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #3c7aff;
+}
+
+#teams h1 {
+    color: #3c7aff;
 }
 
 .card {
@@ -88,9 +105,10 @@ article {
     padding: 0 20px 0 20px;
 }
 
-.card img {
+.card .base {
     height: 300px;
     width: 300px;
+    border-radius: 100%;
 }
 
 .card:hover {
@@ -117,21 +135,49 @@ article {
     background-color: #686ff9;
 }
 
-.card:hover .hidden {
-    height: auto;
-    opacity: 1;
-}
-
 .hidden {
     height: 0;
     opacity: 0;
-    transition: 0.5s;
+    width: 100%;
+}
+
+#teams .hidden {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .hidden {
+    opacity: 1;
+    height: 100%;
+    gap: 20px;
+}
+
+.card:hover h3 {
+    background-color: #3c7aff;
+}
+
+.hidden img {
+    height: 0%;
+}
+
+.card:hover .riesgo {
+    min-height: 30%;
+    /*! ALERTA vigila esto, mira pq no va*/
+    max-height: 70%;
+    border-radius: 100px;
 }
 
 #prevention {
     background-color: #fa7770;
     border-radius: 300px 0 0 0;
     text-align: center;
+}
+
+#prevention {
+    color: white;
 }
 
 #prevention div {
@@ -145,18 +191,22 @@ article {
     align-items: baseline;
 }
 
-
 .carousel img {
     height: 80%;
     border-radius: 0 100px 0 100px;
 }
 
-#emergency img, div {
+#emergency h1 {
+    color:#ff453c;
+}
+
+#emergency img,
+div {
     width: 40%;
 }
 
 #oblig {
-    background-color: #dfe8fc;;
+    background-color: #dfe8fc;
 }
 
 #oblig .card {
@@ -170,4 +220,19 @@ article {
 
 #oblig .card:last-child:hover {
     background-color: #fc615a;
+}
+
+ul span {
+    color: red;
+}
+
+#oblig .hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#oblig article {
+    height: 80%;
 }
