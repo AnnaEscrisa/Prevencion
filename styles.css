@@ -101,7 +101,7 @@ article {
     justify-content: baseline;
 }
 
-.card:hover img {
+.card:hover .base {
     display: none;
 }
 
@@ -145,22 +145,13 @@ article {
     align-items: baseline;
 }
 
-#prevention .medidas div {
-    width: 30%;
-    height: 25%;
-}
 
 .carousel img {
-    height: 90%;
-    transition: 1s;
-}
-
-.carousel img:hover {
-    transform: scale(250%);
+    height: 80%;
+    border-radius: 0 100px 0 100px;
 }
 
 #emergency img, div {
-    
     width: 40%;
 }
 
