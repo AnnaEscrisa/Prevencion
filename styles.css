@@ -38,7 +38,7 @@ header ul {
 /* !ALERTA le cambiamos el color y tambien on hovered */
 header a {
     text-decoration: none;
-   
+
     color: #3c7aff;
     font-weight: bold;
     text-shadow: rgb(106, 106, 106) 1px 1px 5px;
@@ -88,6 +88,10 @@ article {
     margin-bottom: 10px;
     line-height: 1.5;
     color: #3c7aff;
+}
+
+#teams {
+    padding-bottom: 50px;
 }
 
 #teams h1 {
@@ -168,6 +172,20 @@ article {
     /*! ALERTA vigila esto, mira pq no va*/
     max-height: 70%;
     border-radius: 100px;
+
+    outline: none !important;
+
+}
+
+.riesgo {
+    transition: 0.5s;
+}
+
+.riesgo:focus {
+    position: relative;
+    transform: scale(200%);
+    z-index: 3;
+    filter: drop-shadow(5px 10px 10px);
 }
 
 #prevention {
@@ -197,12 +215,18 @@ article {
 }
 
 #emergency h1 {
-    color:#ff453c;
+    color: #ff453c;
 }
 
 #emergency img,
 div {
     width: 40%;
+}
+
+.tick {
+    content: url();
+    height: 50px;
+    width: 50px;
 }
 
 #oblig {
