@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,8 +64,7 @@
                 </div>
             </div>
             <div class="card">
-                <!--! ALERTA cambiar esta imagen-->
-                <img src="img/informatica.jpg" alt="" class="base">
+                <img src="img/equipo_info.png" alt="" class="base">
                 <h3> Informática</h3>
                 <div class="hidden medidas">
                     <img src="img/riesgos/ocular.png" alt="" class="riesgo" tabindex="0">
@@ -109,6 +109,54 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="seguridad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">PPE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="modal-content" src="img/protecc.gif" alt="">
+                </img>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="etiquetado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Etiquetado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="modal-content" src="img/etiqueta.png" alt="">
+                </img>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="visual" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Descanso ocular</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="modal-content" src="img/descanso_ojos.jpg" alt="">
+                </img>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ejercicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ejercicios y estiramientos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="modal-content" src="img/ejercicio.gif" alt="">
+                </img>
+            </div>
+        </div>
+    </div>
     <section id="prevention" class="carousel slide" class="carousel slide">
         <h1>Medidas de prevencion</h1>
 
@@ -126,11 +174,21 @@
                 </div>
                 <div class="carousel-item">
                     <h3>Medidas Limpieza </h3>
-                    <img src="img/preven_limp.png" alt="">
+                    <img src="img/preven_limp.png" alt="" usemap="#limpi">
+                    <map name="limpi">
+                        <area alt="proteccion" id="proteccion" coords="20,400,260,600" shape="rect"
+                            onclick="modal('seguridad')">
+                        <area shape="rect" coords="300,200,550,400" onclick="modal('etiquetado')" alt="etiq">
+                    </map>
                 </div>
                 <div class="carousel-item">
                     <h3>Medidas Infromática</h3>
-                    <img src="img/preven_info.png" alt="">
+                    <img src="img/preven_info.png" alt="" usemap="#inform">
+                    <map name="inform">
+                        <area alt="vision" coords="430,150,600,300" shape="rect"
+                            onclick="modal('visual')">
+                        <area shape="rect" coords="580,350,750,700" onclick="modal('ejercicio')" alt="carpiano">
+                    </map>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

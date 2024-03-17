@@ -22,7 +22,6 @@ header {
     position: fixed;
     display: flex;
     z-index: 3;
-  
 }
 
 header #palo {
@@ -43,10 +42,8 @@ header ul {
 /* !ALERTA le cambiamos el color y tambien on hovered */
 header a {
     text-decoration: none;
-
     color: #3c7aff;
     font-weight: bold;
-    text-shadow: rgb(106, 106, 106) 1px 1px 5px;
 }
 
 header a:hover {
@@ -234,6 +231,7 @@ article {
 
 #oblig {
     background-color: #dfe8fc;
+    border-radius: 200px 0 0 0;
 }
 
 #oblig .card {
