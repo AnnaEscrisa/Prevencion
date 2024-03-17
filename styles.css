@@ -1,3 +1,6 @@
+/*imagenes:
+https://www.istockphoto.com/es/portfolio/BROvector?mediatype=illustration */
+
 html {
     margin: 0;
     padding: 0;
@@ -19,10 +22,11 @@ header {
     position: fixed;
     display: flex;
     z-index: 3;
+  
 }
 
 header #palo {
-    height: 100%;
+    height: 110%;
     width: 10px;
     background-color: blue;
 }
@@ -33,6 +37,7 @@ header ul {
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
+    margin-top: 5px;
 }
 
 /* !ALERTA le cambiamos el color y tambien on hovered */
@@ -208,6 +213,14 @@ article {
 .carousel img {
     height: 80%;
     border-radius: 0 100px 0 100px;
+}
+
+.carousel .map {
+    border: solid 1px black;
+    color: rgb(183, 0, 0);
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
 }
 
 #emergency h1 {
