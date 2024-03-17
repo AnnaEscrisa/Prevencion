@@ -120,7 +120,6 @@ article {
     width: 100%;
     height: 90%;
     border-radius: 0 100px 0 100px;
-    justify-content: baseline;
 }
 
 .card:hover .base {
@@ -165,16 +164,13 @@ article {
 
 .hidden img {
     height: 0%;
+    transition: 1s;
 }
 
 .card:hover .riesgo {
-    min-height: 30%;
-    /*! ALERTA vigila esto, mira pq no va*/
-    max-height: 70%;
+    min-height: 25%;
     border-radius: 100px;
-
     outline: none !important;
-
 }
 
 .riesgo {
@@ -219,14 +215,8 @@ article {
 }
 
 #emergency img,
-div {
+#emergency div {
     width: 40%;
-}
-
-.tick {
-    content: url();
-    height: 50px;
-    width: 50px;
 }
 
 #oblig {
@@ -238,7 +228,6 @@ div {
 }
 
 #oblig .card:first-child:hover {
-
     background-color: #686ff9;
 }
 
